@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Partners() {
   const partners = [
     { name: "FedEx", logo: "/img/fedex.jpg", width: 120, height: 40 },
-    { name: "Amazon", logo: "/img/amazon.jpg", width: 120, height: 40 },
+    { name: "Amazon", logo: "/img/Amazon.jpg", width: 120, height: 40 },
     { name: "Alibaba", logo: "/img/alibaba.jpg", width: 150, height: 40 },
     { name: "DHL", logo: "/img/dhl.jpg", width: 110, height: 40 },
   ];
