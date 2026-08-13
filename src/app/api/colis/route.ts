@@ -4,12 +4,12 @@ import { packages } from "@/db/schema";
 import { getServerSession } from "next-auth";
 import { eq, desc } from "drizzle-orm";
 
-// Générateur de code VEX aléatoire (Ex: VEX-98A2F1)
+// Générateur de code VEX aléatoire à chiffres uniquement (Ex: VEX-839204)
 function generateTrackingCode(): string {
-  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  const digits = "0123456789";
   let randomStr = "";
   for (let i = 0; i < 6; i++) {
-    randomStr += chars.charAt(Math.floor(Math.random() * chars.length));
+    randomStr += digits.charAt(Math.floor(Math.random() * digits.length));
   }
   return `VEX-${randomStr}`;
 }

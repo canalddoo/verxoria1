@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import TrackingSection from "@/components/TrackingSection";
 import ProcessSection from "@/components/ProcessSection";
 import ServicesSection from "@/components/ServicesSection";
+import Partners from "@/components/Partners";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <TrackingSection />
       <ProcessSection />
+      <Partners />
       <ServicesSection />
       <div className="cta-banner">
         <div className="cta-banner-content">

@@ -1352,3 +1352,66 @@ ul {
     gap: 0.5rem;
   }
 }
+
+/* Section Partenaires / Socios */
+.partners-section {
+  padding: 3rem 1.5rem;
+  background-color: #0d0a1a; /* Fond sombre assorti au thème VEXORIA */
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.partners-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.partners-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #a3a3c2;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem 4rem;
+}
+
+.partner-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+/* Grayscale + Invert / Luminosité pour des logos uniformément blanc/gris */
+.partner-logo-img {
+  object-fit: contain;
+  /* filter: grayscale(100%) opacity(1) brightness(1.8); */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet au survol : Révélation / Éclaircissement du logo */
+.partner-logo-item:hover .partner-logo-img {
+  filter: grayscale(100%) opacity(1) brightness(2.5);
+  transform: translateY(-2px);
+}
+
+/* Responsive pour mobiles */
+@media (max-width: 640px) {
+  .partners-grid {
+    gap: 2rem;
+  }
+  
+  .partner-logo-img {
+    max-width: 90px;
+    height: auto;
+  }
+}

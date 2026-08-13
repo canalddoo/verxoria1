@@ -102,18 +102,7 @@ export default function TrackingSection() {
             </div>
           </form>
 
-          {/* Ejemplo de demostración */}
-          <div className="tracking-demo">
-            <span>Ejemplo de demostración: </span>
-            <button
-              type="button"
-              onClick={handleDemoClick}
-              className="demo-tag"
-            >
-              VEX-2026-0001
-            </button>
-          </div>
-
+          
           {/* Mensaje de Error */}
           {error && (
             <div className="tracking-error-card">

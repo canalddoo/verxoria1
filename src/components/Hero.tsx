@@ -8,10 +8,10 @@ export default function Hero() {
       <div className="hero-container">
         {/* COLUMNA IZQUIERDA: TEXTOS Y CTA */}
         <div className="hero-content">
-          {/* Badge de destinos */}
+          {/* Badge de destinos y alianza */}
           <div className="hero-badge">
-            <i className="fa-solid fa-plane"></i>
-            <span>España · México · Destinos internacionales</span>
+            <i className="fa-solid fa-handshake"></i>
+            <span>En alianza con FedEx · España · México · Internacional</span>
           </div>
 
           {/* Título Principal */}
@@ -33,7 +33,7 @@ export default function Hero() {
               <i className="fa-solid fa-arrow-right arrow-icon"></i>
             </Link>
 
-            <Link href="#contact" className="btn-hero-secondary">
+            <Link href="https://wa.me/50583205457" target="_blank" className="btn-hero-secondary">
               <i className="fa-solid fa-headset"></i>
               <span>Contáctanos</span>
             </Link>
